@@ -1,0 +1,46 @@
+{
+  "name": "PM Fasal Bima Yojana (crop insurance)",
+  "source": "https://pmfby.gov.in/",
+  "benefit": "Crop insurance against yield loss, subject to notified crops/areas and enrolment deadlines",
+  "rules": [
+    {
+      "id": "PMF-1",
+      "field": "grows_notified_crop",
+      "type": "require",
+      "op": "eq",
+      "value": true,
+      "text": "Must grow a notified crop in a notified area this season"
+    },
+    {
+      "id": "PMF-2",
+      "field": "has_bank_account",
+      "type": "require",
+      "op": "eq",
+      "value": true,
+      "text": "Premium/claims via bank account"
+    }
+  ],
+  "documents": [
+    "Land record or tenancy proof",
+    "Bank passbook",
+    "Sowing declaration/certificate"
+  ],
+  "manual_checks": [
+    "Notified crops/area and last enrolment date for this season"
+  ],
+  "scheme_id": "PMFBY",
+  "version": "demo-2026.11",
+  "status": "demo_unverified",
+  "last_verified": null,
+  "required_doc_types": [
+    "land_record",
+    "bank_passbook"
+  ],
+  "application_steps": [
+    "Check the notified crops and last enrolment date for your area on pmfby.gov.in or with your bank/CSC.",
+    "Keep land record, bank passbook and sowing details ready.",
+    "Enrol through your bank, CSC or the official portal before the deadline.",
+    "Save the policy/receipt number in the Applications tab."
+  ],
+  "conditions_complete": false
+}

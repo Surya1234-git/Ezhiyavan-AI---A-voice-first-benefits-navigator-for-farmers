@@ -1,0 +1,25 @@
+# DEMO stack: one command -> http://localhost:5173
+# ENV=dev shows the OTP on screen and ALLOW_UNVERIFIED=1 activates the unverified demo scheme drafts. NEVER use these settings with real farmers.
+services:
+  backend:
+    build: ./backend
+    environment:
+      ENV: dev
+      ALLOW_UNVERIFIED: "1"
+      SECRET_KEY: demo-only-secret-change-me-0123456789abcdefghijklmn
+      CORS_ORIGINS: http://localhost:5173
+      OCR_LANGS: tam+eng
+      DATABASE_URL: sqlite:////data/ezhiyavan.db
+      UPLOAD_DIR: /data/uploads
+    volumes: ["demo-data:/data"]
+    ports: ["8000:8000"]
+  frontend:
+    image: node:20-alpine
+    working_dir: /app
+    environment: { API_TARGET: "http://backend:8000" }
+    volumes: ["./frontend:/app"]
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    ports: ["5173:5173"]
+    depends_on: [backend]
+volumes:
+  demo-data:

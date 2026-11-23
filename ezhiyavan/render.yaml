@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: ezhiyavan-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    healthCheckPath: /healthz
+    envVars:
+      - key: ENV
+        value: dev              # demo mode: OTP shown on screen
+      - key: ALLOW_UNVERIFIED
+        value: "1"              # demo mode: show the unverified draft schemes
+      - key: SECRET_KEY
+        generateValue: true
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: TRUST_PROXY
+        value: "1"
+      - key: OCR_LANGS
+        value: tam+eng
+      - key: DATABASE_URL
+        value: sqlite:////tmp/ezhiyavan.db
+      - key: UPLOAD_DIR
+        value: /tmp/uploads

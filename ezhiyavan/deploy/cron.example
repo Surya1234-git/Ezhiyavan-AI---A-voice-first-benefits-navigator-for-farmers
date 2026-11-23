@@ -1,0 +1,5 @@
+# /etc/cron.d/ezhiyavan  (example - adapt user, paths and environment; env vars come from a root-only file, not this file)
+# Retention: delete expired documents / inactive accounts / stale OTP rows daily at 02:10
+10 2 * * *  ezhiyavan  cd /opt/ezhiyavan/backend && set -a && . /etc/ezhiyavan.env && set +a && .venv/bin/python -m app.maintenance >> /var/log/ezhiyavan-retention.log 2>&1
+# Encrypted backup daily at 02:40, keep 14; copy off-host afterwards (rsync/object storage) and TEST a restore monthly
+40 2 * * *  ezhiyavan  cd /opt/ezhiyavan/backend && set -a && . /etc/ezhiyavan.env && set +a && .venv/bin/python scripts/backup.py backup /var/backups/ezhiyavan >> /var/log/ezhiyavan-backup.log 2>&1

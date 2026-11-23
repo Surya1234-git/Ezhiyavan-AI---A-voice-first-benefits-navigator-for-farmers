@@ -1,0 +1,61 @@
+{
+  "name": "Kisan Credit Card",
+  "source": "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13522",
+  "benefit": "Short-term farm credit at concessional interest through your bank",
+  "rules": [
+    {
+      "id": "KCC-1",
+      "type": "require",
+      "any": [
+        {
+          "field": "land_owned_acres",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "field": "cultivates_leased_land",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "field": "does_allied_activity",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "text": "Must be an owner cultivator, a tenant farmer / oral lessee / sharecropper, or a farmer doing allied activities such as animal husbandry or fisheries"
+    },
+    {
+      "id": "KCC-2",
+      "field": "has_bank_account",
+      "type": "require",
+      "op": "eq",
+      "value": true,
+      "text": "Applied through a bank"
+    }
+  ],
+  "documents": [
+    "Land record, or tenancy / cultivation evidence as the bank requires",
+    "Bank account details",
+    "Passport photo",
+    "Identity proof (as the bank requires)"
+  ],
+  "manual_checks": [
+    "Bank's own credit assessment",
+    "Ask the bank what evidence it accepts if you cultivate leased land (including oral lease or sharecropping)"
+  ],
+  "scheme_id": "KCC",
+  "version": "demo-2026.11b",
+  "status": "demo_unverified",
+  "last_verified": null,
+  "required_doc_types": [
+    "land_record",
+    "bank_passbook"
+  ],
+  "application_steps": [
+    "Visit your bank branch or cooperative society (or its official portal) and ask for a Kisan Credit Card application.",
+    "Take your land record (or tenancy / cultivation evidence if you do not own the land), bank account details, photo and ID as the bank requires.",
+    "The bank decides on credit limit; note the application number in the Applications tab."
+  ],
+  "conditions_complete": false
+}

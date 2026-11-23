@@ -1,0 +1,185 @@
+{
+  "name": "PM-KISAN Samman Nidhi",
+  "source": "https://pmkisan.gov.in/",
+  "benefit": "Income support, ₹6,000/year in three instalments for eligible farmer families",
+  "rules": [
+    {
+      "id": "PMK-1",
+      "field": "land_owned_acres",
+      "type": "require",
+      "op": "gt",
+      "value": 0,
+      "text": "Must own cultivable land"
+    },
+    {
+      "id": "PMK-2",
+      "field": "institutional_landholder",
+      "type": "exclude",
+      "op": "eq",
+      "value": true,
+      "text": "Institutional landholders are excluded"
+    },
+    {
+      "id": "PMK-3",
+      "type": "exclude",
+      "text": "Income tax payers (previous assessment year) in the beneficiary family - the applicant or their spouse - are excluded",
+      "any": [
+        {
+          "field": "income_tax_self",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "field": "income_tax_spouse",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "PMK-3b",
+      "type": "flag",
+      "field": "income_tax_other_family",
+      "op": "eq",
+      "value": true,
+      "text": "Someone else in the household pays income tax. Whether this matters depends on the official definition of the beneficiary family (husband, wife and minor children) - needs a manual check"
+    },
+    {
+      "id": "PMK-4",
+      "field": "government_employee",
+      "type": "exclude",
+      "op": "eq",
+      "value": true,
+      "text": "Serving or retired government employees (except MTS/Class IV/Group D) and pensioners with Rs 10,000+/month are excluded"
+    },
+    {
+      "id": "PMK-5",
+      "field": "has_bank_account",
+      "type": "require",
+      "op": "eq",
+      "value": true,
+      "text": "A bank account is needed for payment"
+    },
+    {
+      "id": "PMK-6",
+      "field": "constitutional_post_holder",
+      "type": "exclude",
+      "op": "eq",
+      "value": true,
+      "text": "Current/former holders of constitutional posts (ministers, MPs, MLAs, mayors, district panchayat chairpersons) are excluded"
+    },
+    {
+      "id": "PMK-7",
+      "field": "professional_registered",
+      "type": "exclude",
+      "op": "eq",
+      "value": true,
+      "text": "Practising professionals (doctors, engineers, lawyers, CAs, architects) are excluded"
+    }
+  ],
+  "documents": [
+    "Land ownership record (patta/chitta)",
+    "Bank passbook first page",
+    "Aadhaar-based eKYC done on the official portal"
+  ],
+  "manual_checks": [
+    "Exact landholding and exclusion conditions per the official Operational Guidelines",
+    "Land ownership cut-off date: the FAQ (Q10, Q11) says 1 Feb 2019 with an exception for succession on death; ask the revenue office whether this still applies",
+    "Land must be cultivable and actually in agricultural use (FAQ Q23, Q25)",
+    "eKYC status on official portal"
+  ],
+  "scheme_id": "PM_KISAN",
+  "version": "demo-2026.11c",
+  "status": "demo_unverified",
+  "last_verified": null,
+  "sources": [
+    "https://pmkisan.gov.in/",
+    "https://pmkisan.gov.in/Documents/RevisedPM-KISANOperationalGuidelines(English).pdf"
+  ],
+  "review_notes": "Exclusions drafted from the operational guidelines as summarised by secondary sources (Nov 2026). An independent reviewer must check the guideline text itself, exceptions, family definition (husband, wife, minor children) and current state rules before verification. Income tax is split into applicant / spouse (exclusion) and other household members (manual-check flag): the reviewer must confirm against the family definition in the guidelines.",
+  "required_doc_types": [
+    "land_record",
+    "bank_passbook"
+  ],
+  "application_steps": [
+    "Open the official portal pmkisan.gov.in (or visit your CSC / local agriculture office).",
+    "Use Farmers Corner to register as a new farmer, or check your status if you are already registered.",
+    "Keep your land record and bank passbook ready.",
+    "Complete eKYC as the portal instructs.",
+    "Write your registration number in the Applications tab of this app."
+  ],
+  "conditions_complete": false,
+  "source_evidence": [
+    {
+      "title": "PM-KISAN Frequently Asked Questions, Ministry of Agriculture and Farmers Welfare (PIB document, 23 Nov 2021)",
+      "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2021/nov/doc2021112361.pdf",
+      "document_date": "2021-11-23",
+      "page": null,
+      "section": "Q5, Q6, Q12, Q13 (family = husband, wife, minor children; land must be in the farmer's own name; tenant farmers are not eligible)",
+      "rule_ids": [
+        "PMK-1"
+      ]
+    },
+    {
+      "title": "PM-KISAN Frequently Asked Questions, Ministry of Agriculture and Farmers Welfare (PIB document, 23 Nov 2021)",
+      "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2021/nov/doc2021112361.pdf",
+      "document_date": "2021-11-23",
+      "page": null,
+      "section": "Q7(i) (institutional landholders are excluded)",
+      "rule_ids": [
+        "PMK-2"
+      ]
+    },
+    {
+      "title": "PM-KISAN Frequently Asked Questions, Ministry of Agriculture and Farmers Welfare (PIB document, 23 Nov 2021)",
+      "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2021/nov/doc2021112361.pdf",
+      "document_date": "2021-11-23",
+      "page": null,
+      "section": "Q5 and Q7(ii)(e) (family definition; any family member who paid income tax in the last assessment year)",
+      "rule_ids": [
+        "PMK-3",
+        "PMK-3b"
+      ]
+    },
+    {
+      "title": "PM-KISAN Frequently Asked Questions, Ministry of Agriculture and Farmers Welfare (PIB document, 23 Nov 2021)",
+      "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2021/nov/doc2021112361.pdf",
+      "document_date": "2021-11-23",
+      "page": null,
+      "section": "Q7(ii)(c) and (d) (government employees and pensioners of Rs 10,000 or more, except MTS / Class IV / Group D)",
+      "rule_ids": [
+        "PMK-4"
+      ]
+    },
+    {
+      "title": "PM-KISAN Frequently Asked Questions, Ministry of Agriculture and Farmers Welfare (PIB document, 23 Nov 2021)",
+      "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2021/nov/doc2021112361.pdf",
+      "document_date": "2021-11-23",
+      "page": null,
+      "section": "Q20 (bank account details are compulsory; no benefit without them)",
+      "rule_ids": [
+        "PMK-5"
+      ]
+    },
+    {
+      "title": "PM-KISAN Frequently Asked Questions, Ministry of Agriculture and Farmers Welfare (PIB document, 23 Nov 2021)",
+      "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2021/nov/doc2021112361.pdf",
+      "document_date": "2021-11-23",
+      "page": null,
+      "section": "Q7(ii)(a) and (b) (constitutional post holders; ministers, MPs, MLAs, mayors, district panchayat chairpersons)",
+      "rule_ids": [
+        "PMK-6"
+      ]
+    },
+    {
+      "title": "PM-KISAN Frequently Asked Questions, Ministry of Agriculture and Farmers Welfare (PIB document, 23 Nov 2021)",
+      "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2021/nov/doc2021112361.pdf",
+      "document_date": "2021-11-23",
+      "page": null,
+      "section": "Q7(ii)(f) (registered professionals practising their profession)",
+      "rule_ids": [
+        "PMK-7"
+      ]
+    }
+  ]
+}

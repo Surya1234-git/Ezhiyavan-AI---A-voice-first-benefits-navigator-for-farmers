@@ -1,0 +1,42 @@
+{
+  "name": "PM-JAY (Ayushman Bharat)",
+  "source": "https://pmjay.gov.in/",
+  "benefit": "Health cover for listed beneficiary families, and for every citizen aged 70 or above regardless of income",
+  "rules": [
+    {
+      "id": "JAY-1",
+      "type": "require",
+      "any": [
+        {
+          "field": "in_pmjay_list",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "field": "has_member_aged_70_plus",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "text": "Eligible if the family is on the official beneficiary list, or if any member is aged 70 or above (regardless of income). Land ownership alone does not qualify"
+    }
+  ],
+  "documents": [
+    "Ration card / identity proof",
+    "Aadhaar as requested at enrolment"
+  ],
+  "manual_checks": [
+    "Check name on official beneficiary list",
+    "Age 70+ is verified through Aadhaar e-KYC when the card is made"
+  ],
+  "scheme_id": "PMJAY",
+  "version": "demo-2026.11b",
+  "status": "demo_unverified",
+  "last_verified": null,
+  "required_doc_types": [],
+  "application_steps": [
+    "Check whether your family is on the official beneficiary list using the official PM-JAY site or a CSC.",
+    "If listed, visit an empanelled hospital's Ayushman Mitra desk or a CSC with the documents they request."
+  ],
+  "conditions_complete": false
+}

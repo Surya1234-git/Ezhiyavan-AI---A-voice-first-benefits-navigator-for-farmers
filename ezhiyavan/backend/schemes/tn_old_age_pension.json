@@ -1,0 +1,44 @@
+{
+  "name": "Social pension for senior citizens (Tamil Nadu)",
+  "source": "https://www.tn.gov.in/",
+  "benefit": "Monthly pension for eligible elderly persons; income/destitution conditions apply",
+  "rules": [
+    {
+      "id": "PEN-1",
+      "field": "age",
+      "type": "require",
+      "op": "gte",
+      "value": 60,
+      "text": "Applicant must be 60 or older (further income/destitution conditions apply)"
+    }
+  ],
+  "documents": [
+    "Age proof",
+    "Residence proof",
+    "Income/destitution certificate if required",
+    "Bank account details"
+  ],
+  "manual_checks": [
+    "Income and destitution criteria; confirm current state rules with the Revenue Dept / VAO"
+  ],
+  "scheme_id": "TN_OLD_AGE_PENSION",
+  "version": "demo-2026.11",
+  "status": "demo_unverified",
+  "last_verified": null,
+  "required_doc_types": [],
+  "application_steps": [
+    "Ask your Village Administrative Officer (VAO) / taluk office about the current form and conditions.",
+    "Keep age proof, residence proof and bank details ready.",
+    "Note the application number in the Applications tab."
+  ],
+  "applies_to": "member",
+  "applicable_states": [
+    "Tamil Nadu"
+  ],
+  "conflicts_with": [
+    "TN_WIDOW_PENSION",
+    "TN_DISABILITY_ASSISTANCE"
+  ],
+  "conflict_note": "Often only one social pension per person is allowed - confirm with the Revenue Dept/VAO",
+  "conditions_complete": false
+}

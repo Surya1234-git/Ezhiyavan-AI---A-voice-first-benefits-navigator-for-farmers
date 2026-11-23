@@ -1,0 +1,45 @@
+{
+  "version": "demo-2026.11",
+  "status": "demo_unverified",
+  "last_verified": null,
+  "applies_to": "member",
+  "applicable_states": [
+    "Tamil Nadu"
+  ],
+  "source": "https://www.tn.gov.in/",
+  "conflict_note": "Often only one social pension per person is allowed - confirm with the department",
+  "documents": [
+    "Identity and residence proof",
+    "Bank account details",
+    "Scheme-specific certificate (see manual checks)"
+  ],
+  "scheme_id": "TN_DISABILITY_ASSISTANCE",
+  "name": "Assistance for persons with disability (Tamil Nadu)",
+  "benefit": "Assistance for eligible persons with disabilities; disability percentage and income conditions apply",
+  "rules": [
+    {
+      "id": "DIS-1",
+      "field": "has_disability",
+      "type": "require",
+      "op": "eq",
+      "value": true,
+      "text": "Person must have a disability (certificate and percentage conditions apply)"
+    }
+  ],
+  "manual_checks": [
+    "Disability certificate and minimum percentage - NOT encoded yet",
+    "Income and other conditions"
+  ],
+  "required_doc_types": [],
+  "application_steps": [
+    "Ask the District Differently Abled Welfare Office / VAO about current schemes and forms.",
+    "Keep the disability certificate, identity and bank details ready.",
+    "Note the application number in the Applications tab."
+  ],
+  "conflicts_with": [
+    "TN_OLD_AGE_PENSION",
+    "TN_WIDOW_PENSION"
+  ],
+  "review_notes": "Placeholder draft. Locate the current Government Order and encode real conditions before verification.",
+  "conditions_complete": false
+}

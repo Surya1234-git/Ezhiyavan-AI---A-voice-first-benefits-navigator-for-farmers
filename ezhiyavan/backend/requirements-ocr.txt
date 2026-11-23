@@ -1,0 +1,5 @@
+# Optional document reading. Also install the Tesseract engine with Tamil data (tesseract-ocr, tesseract-ocr-tam, tesseract-ocr-eng).
+pypdf>=4.0
+pytesseract>=0.3.10
+Pillow>=10.0
+pypdfium2>=4.30

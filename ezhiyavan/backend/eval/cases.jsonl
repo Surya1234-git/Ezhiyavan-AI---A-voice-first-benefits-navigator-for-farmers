@@ -1,0 +1,105 @@
+{"id": 0, "lang": "en", "field": "land_owned_acres", "text": "I own 2 acres", "expected": 2.0}
+{"id": 1, "lang": "en", "field": "land_owned_acres", "text": "about three acres of paddy", "expected": 3.0}
+{"id": 2, "lang": "en", "field": "land_owned_acres", "text": "2.5 acres", "expected": 2.5}
+{"id": 3, "lang": "en", "field": "land_owned_acres", "text": "not much, just a small plot", "expected": null}
+{"id": 4, "lang": "ta", "field": "land_owned_acres", "text": "எனக்கு இரண்டு ஏக்கர் நிலம் இருக்கிறது", "expected": 2.0}
+{"id": 5, "lang": "ta", "field": "land_owned_acres", "text": "3 ஏக்கர்", "expected": 3.0}
+{"id": 6, "lang": "ta", "field": "land_owned_acres", "text": "நாற்பது சென்ட் நிலம்", "expected": 0.4}
+{"id": 7, "lang": "ta", "field": "land_owned_acres", "text": "ஒரு ஏக்கர் இருக்கு", "expected": 1.0}
+{"id": 8, "lang": "hi", "field": "land_owned_acres", "text": "मेरे पास दो एकड़ ज़मीन है", "expected": 2.0}
+{"id": 9, "lang": "hi", "field": "land_owned_acres", "text": "4 एकड़", "expected": 4.0}
+{"id": 10, "lang": "hi", "field": "land_owned_acres", "text": "आधा हेक्टेयर", "expected": 1.235}
+{"id": 11, "lang": "mixed", "field": "land_owned_acres", "text": "enakku 2 acre nilam irukku", "expected": 2.0}
+{"id": 12, "lang": "mixed", "field": "land_owned_acres", "text": "mere paas 3 acre hai", "expected": 3.0}
+{"id": 13, "lang": "en", "field": "has_bank_account", "text": "yes I have", "expected": true}
+{"id": 14, "lang": "en", "field": "has_bank_account", "text": "no", "expected": false}
+{"id": 15, "lang": "en", "field": "has_bank_account", "text": "not yet", "expected": null}
+{"id": 16, "lang": "ta", "field": "has_bank_account", "text": "ஆம், இருக்கிறது", "expected": true}
+{"id": 17, "lang": "ta", "field": "has_bank_account", "text": "இல்லை", "expected": false}
+{"id": 18, "lang": "ta", "field": "has_bank_account", "text": "ஆமாம் SBI-ல இருக்கு", "expected": true}
+{"id": 19, "lang": "hi", "field": "has_bank_account", "text": "हाँ है", "expected": true}
+{"id": 20, "lang": "hi", "field": "has_bank_account", "text": "नहीं है", "expected": false}
+{"id": 21, "lang": "hi", "field": "has_bank_account", "text": "जी बिल्कुल", "expected": true}
+{"id": 22, "lang": "mixed", "field": "has_bank_account", "text": "illai sir, account illa", "expected": false}
+{"id": 23, "lang": "mixed", "field": "has_bank_account", "text": "haan account hai", "expected": true}
+{"id": 24, "lang": "en", "field": "income_tax_self", "text": "nobody pays income tax", "expected": false}
+{"id": 25, "lang": "en", "field": "income_tax_other_family", "text": "my son pays income tax", "expected": true}
+{"id": 26, "lang": "ta", "field": "income_tax_self", "text": "எங்கள் குடும்பத்தில் யாரும் வருமான வரி செலுத்துவதில்லை", "expected": false}
+{"id": 27, "lang": "hi", "field": "income_tax_self", "text": "नहीं, कोई आयकर नहीं देता", "expected": false}
+{"id": 28, "lang": "en", "field": "state", "text": "Tamil Nadu", "expected": "Tamil Nadu"}
+{"id": 29, "lang": "ta", "field": "state", "text": "தமிழ்நாடு", "expected": "Tamil Nadu"}
+{"id": 30, "lang": "hi", "field": "state", "text": "तमिलनाडु", "expected": "Tamil Nadu"}
+{"id": 31, "lang": "en", "field": "state", "text": "Kerala", "expected": null}
+{"id": 100, "lang": "ta", "field": "land_owned_acres", "text": "எனக்கு மூன்று குழந்தைகள், இரண்டு ஏக்கர் நிலம் இருக்கு.", "expected": 2.0}
+{"id": 101, "lang": "ta", "field": "land_owned_acres", "text": "ஒன்றரை ஏக்கர் நிலம் இருக்கு", "expected": 1.5}
+{"id": 102, "lang": "ta", "field": "land_owned_acres", "text": "இரண்டரை ஏக்கர்", "expected": 2.5}
+{"id": 103, "lang": "ta", "field": "land_owned_acres", "text": "அரை ஏக்கர்", "expected": 0.5}
+{"id": 104, "lang": "ta", "field": "land_owned_acres", "text": "கால் ஏக்கர்", "expected": 0.25}
+{"id": 105, "lang": "ta", "field": "land_owned_acres", "text": "எனக்கு தெரியாது", "expected": null}
+{"id": 106, "lang": "ta", "field": "has_bank_account", "text": "வங்கிக் கணக்கு இருக்கு", "expected": true}
+{"id": 107, "lang": "ta", "field": "has_bank_account", "text": "எனக்கு தெரியாது", "expected": null}
+{"id": 108, "lang": "ta", "field": "has_bank_account", "text": "இன்னும் பதிவு செய்யவில்லை", "expected": false}
+{"id": 109, "lang": "en", "field": "land_owned_acres", "text": "I have 3 children and 2 acres", "expected": 2.0}
+{"id": 110, "lang": "en", "field": "land_owned_acres", "text": "2 acres and 50 cents", "expected": 2.5}
+{"id": 111, "lang": "en", "field": "land_owned_acres", "text": "one and a half acres", "expected": 1.5}
+{"id": 112, "lang": "en", "field": "land_owned_acres", "text": "I said two acres, actually it is three", "expected": 3.0}
+{"id": 113, "lang": "en", "field": "land_owned_acres", "text": "I don't know", "expected": null}
+{"id": 114, "lang": "hi", "field": "land_owned_acres", "text": "ढाई एकड़", "expected": 2.5}
+{"id": 115, "lang": "hi", "field": "land_owned_acres", "text": "साढ़े तीन एकड़", "expected": 3.5}
+{"id": 116, "lang": "hi", "field": "land_owned_acres", "text": "डेढ़ एकड़", "expected": 1.5}
+{"id": 117, "lang": "hi", "field": "has_bank_account", "text": "पता नहीं", "expected": null}
+{"id": 118, "lang": "mixed", "field": "land_owned_acres", "text": "rendu acre irukku", "expected": 2.0}
+{"id": 119, "lang": "mixed", "field": "land_owned_acres", "text": "naalu ekkar", "expected": 4.0}
+{"id": 120, "lang": "mixed", "field": "has_bank_account", "text": "account irukku", "expected": true}
+{"id": 121, "lang": "mixed", "field": "has_bank_account", "text": "nahi hai", "expected": false}
+{"id": 122, "lang": "en", "field": "has_bank_account", "text": "no idea", "expected": null}
+{"id": 123, "lang": "en", "field": "income_tax_self", "text": "I pay income tax", "expected": true}
+{"id": 124, "lang": "en", "field": "income_tax_self", "text": "my husband pays income tax", "expected": null}
+{"id": 125, "lang": "en", "field": "income_tax_self", "text": "my son pays income tax", "expected": null}
+{"id": 126, "lang": "en", "field": "income_tax_self", "text": "no", "expected": false}
+{"id": 127, "lang": "en", "field": "income_tax_spouse", "text": "my wife pays income tax", "expected": true}
+{"id": 128, "lang": "en", "field": "income_tax_spouse", "text": "my son pays income tax", "expected": null}
+{"id": 129, "lang": "en", "field": "income_tax_spouse", "text": "I pay but my husband does not", "expected": false}
+{"id": 130, "lang": "en", "field": "income_tax_other_family", "text": "my son pays income tax", "expected": true}
+{"id": 131, "lang": "en", "field": "income_tax_other_family", "text": "my daughter pays tax", "expected": true}
+{"id": 132, "lang": "en", "field": "income_tax_other_family", "text": "I pay income tax", "expected": null}
+{"id": 133, "lang": "en", "field": "income_tax_other_family", "text": "someone in the family pays income tax but I don't know who", "expected": true}
+{"id": 134, "lang": "en", "field": "income_tax_self", "text": "someone in the family pays income tax but I don't know who", "expected": null}
+{"id": 135, "lang": "en", "field": "income_tax_other_family", "text": "nobody pays income tax", "expected": false}
+{"id": 136, "lang": "en", "field": "income_tax_spouse", "text": "nobody pays income tax", "expected": false}
+{"id": 137, "lang": "en", "field": "income_tax_self", "text": "I don't pay, my son pays", "expected": false}
+{"id": 138, "lang": "en", "field": "income_tax_other_family", "text": "I don't pay, my son pays", "expected": true}
+{"id": 139, "lang": "ta", "field": "income_tax_self", "text": "என் கணவர் வருமான வரி செலுத்துகிறார்", "expected": null}
+{"id": 140, "lang": "ta", "field": "income_tax_spouse", "text": "என் கணவர் வருமான வரி செலுத்துகிறார்", "expected": true}
+{"id": 141, "lang": "ta", "field": "income_tax_other_family", "text": "என் மகன் வருமான வரி செலுத்துகிறார்", "expected": true}
+{"id": 142, "lang": "ta", "field": "income_tax_self", "text": "நான் வருமான வரி செலுத்துவதில்லை", "expected": false}
+{"id": 143, "lang": "ta", "field": "income_tax_spouse", "text": "என் மகன் வருமான வரி செலுத்துகிறார்", "expected": null}
+{"id": 144, "lang": "ta", "field": "income_tax_self", "text": "இல்லை", "expected": false}
+{"id": 145, "lang": "hi", "field": "income_tax_self", "text": "मेरे पति आयकर देते हैं", "expected": null}
+{"id": 146, "lang": "hi", "field": "income_tax_spouse", "text": "मेरे पति आयकर देते हैं", "expected": true}
+{"id": 147, "lang": "hi", "field": "income_tax_other_family", "text": "मेरा बेटा आयकर देता है", "expected": true}
+{"id": 148, "lang": "hi", "field": "income_tax_self", "text": "मैं आयकर नहीं देता", "expected": false}
+{"id": 149, "lang": "mixed", "field": "income_tax_other_family", "text": "en son income tax pay panraar", "expected": true}
+{"id": 150, "lang": "mixed", "field": "income_tax_self", "text": "en husband income tax pay pannuvaar", "expected": null}
+{"id": 151, "lang": "en", "field": "income_tax_self", "text": "he pays income tax", "expected": null}
+{"id": 152, "lang": "en", "field": "income_tax_self", "text": "she pays", "expected": null}
+{"id": 153, "lang": "en", "field": "income_tax_other_family", "text": "my son doesn't pay income tax", "expected": null}
+{"id": 154, "lang": "en", "field": "income_tax_spouse", "text": "my wife and I both pay income tax", "expected": true}
+{"id": 155, "lang": "en", "field": "income_tax_self", "text": "my wife and I both pay income tax", "expected": true}
+{"id": 156, "lang": "en", "field": "income_tax_self", "text": "I don't know, my husband pays", "expected": null}
+{"id": 157, "lang": "en", "field": "income_tax_spouse", "text": "I don't know, my husband pays", "expected": true}
+{"id": 158, "lang": "ta", "field": "income_tax_spouse", "text": "என் வீட்டுக்காரர் வரி கட்டுறார்", "expected": true}
+{"id": 159, "lang": "ta", "field": "income_tax_self", "text": "அவர் வரி கட்டுறார்", "expected": null}
+{"id": 160, "lang": "hi", "field": "income_tax_self", "text": "वह आयकर देता है", "expected": null}
+{"id": 161, "lang": "en", "field": "income_tax_other_family", "text": "my brother and my son pay income tax", "expected": true}
+{"id": 162, "lang": "en", "field": "income_tax_spouse", "text": "my husband does not pay income tax", "expected": false}
+{"id": 163, "lang": "en", "field": "income_tax_self", "text": "my son pays income tax, I do not", "expected": false}
+{"id": 164, "lang": "en", "field": "income_tax_other_family", "text": "my son pays income tax, I do not", "expected": true}
+{"id": 165, "lang": "ta", "field": "income_tax_self", "text": "என் மகன் வருமான வரி செலுத்துகிறார், நான் செலுத்துவதில்லை", "expected": false}
+{"id": 166, "lang": "ta", "field": "land_owned_acres", "text": "எனக்கு இரண்டு ஏக்கர் நிலம் இருக்கு", "expected": 2.0, "source": "review-list"}
+{"id": 167, "lang": "ta", "field": "income_tax_self", "text": "என் மகனுக்கு வருமான வரி கட்டணும்", "expected": null, "source": "review-list"}
+{"id": 168, "lang": "ta", "field": "income_tax_other_family", "text": "என் மகனுக்கு வருமான வரி கட்டணும்", "expected": true, "source": "review-list"}
+{"id": 169, "lang": "ta", "field": "land_owned_acres", "text": "எனக்குத் தெரியாது", "expected": null, "source": "review-list"}
+{"id": 170, "lang": "ta", "field": "land_owned_acres", "text": "முதலில் இரண்டு சொன்னேன், இப்போது மூன்று ஏக்கர்", "expected": 3.0, "source": "review-list"}
+{"id": 171, "lang": "ta", "field": "land_owned_acres", "text": "என் மனைவி பெயரில் நிலம் இருக்கு", "expected": null, "source": "review-list"}
+{"id": 172, "lang": "en", "field": "land_owned_acres", "text": "I have two acres, but I am not sure", "expected": 2.0, "source": "review-list"}
